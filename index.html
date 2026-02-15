@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glorious Beauty Salon - Premium Ladies Salon</title>
+  <meta name="description"
+    content="Experience premium beauty services at Glorious Beauty Salon. A ladies-only sanctuary for hair, skin, and relaxation." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+  <script>
+  const savedTheme = localStorage.getItem("theme") || "dark";
+  document.documentElement.setAttribute("data-theme", savedTheme);
+</script>
+
+</head>
+
+<body>
+  <div id="cursor-glow" class="cursor-glow"></div>
+  <div class="background-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <header id="header" class="header">
+    <div class="container header-container">
+      <a href="#" class="logo-link">
+        <svg class="brand-logo" width="180" height="55" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#F48FB1" />
+              <stop offset="50%" style="stop-color:#FFC1E3" />
+              <stop offset="100%" style="stop-color:#F48FB1" />
+            </linearGradient>
+          </defs>
+          <text x="50%" y="38" text-anchor="middle" font-family="'Playfair Display', serif" font-weight="600"
+            font-style="italic" font-size="36" fill="url(#logoGradient)" letter-spacing="0.5px">Glorious</text>
+          <text x="50%" y="54" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="300" font-size="8.5"
+            fill="#e0e0e0" letter-spacing="3px" style="text-transform: uppercase;">Beauty Salon</text>
+        </svg>
+      </a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5" />
+          <line x1="12" y1="1" x2="12" y2="3" />
+          <line x1="12" y1="21" x2="12" y2="23" />
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+          <line x1="1" y1="12" x2="3" y2="12" />
+          <line x1="21" y1="12" x2="23" y2="12" />
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+        </svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+      <a href="#booking" class="btn btn-primary nav-btn">Book Now</a>
+      <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <div class="glass-card fade-in-up">
+          <h1>Glorious Beauty Salon</h1>
+          <p class="subtitle">Your Trusted Space for Hair & Beauty</p>
+          <div class="hero-buttons">
+            <a href="#booking" class="btn btn-primary">Book Appointment</a>
+            <a href="#services" class="btn btn-outline">View Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container about-container">
+        <div class="about-image fade-in-up">
+          <div class="image-placeholder"></div>
+        </div>
+
+        <div class="about-text fade-in-up">
+          <h2>Glorious Beauty Salon – Mira Road</h2>
+          <p>Welcome to <strong>Glorious Beauty Salon</strong>, a ladies-only sanctuary designed for your absolute
+            comfort and privacy.</p>
+          <p>We pride ourselves on maintaining the highest standards of hygiene and professionalism.
+            From the moment you step in, you get our undivided attention and care. Every service is delivered with
+            attention to detail and professional care. From hair to skin treatments, we focus on quality results without
+            compromise.</p>
+          <ul class="feature-list">
+            <li>✨ Ladies Only Environment</li>
+            <li>✨ High Hygiene Standards</li>
+            <li>✨ Trusted Expert Professional Staff</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <h2>Our Services</h2>
+          <p>Expert treatments tailored to your unique beauty needs.</p>
+        </div>
+        <div class="services-grid">
+          <!-- 1. Hair Services -->
+          <div class="service-card fade-in-up">
+            <div class="service-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2C8 2 8 8 8 8s-4 2-4 6c0 3.5 3 6 8 6s8-2.5 8-6c0-4-4-6-4-6s0-6-4-6Z" />
+                <path d="M9 14s1.5 2 3 2 3-2 3-2" />
+              </svg>
+            </div>
+            <h3 class="service-title">Hair Services</h3>
+            <span class="service-price-badge">Starting from ₹199</span>
+            <p class="service-desc">Trendy cuts, styling & colour solutions for every hair type.</p>
+            <a href="#booking" class="btn-book">Book Appointment</a>
+            <a href="tel:9167022992" class="link-call">Call Now</a>
+          </div>
+
+          <!-- 2. Skin & Facials -->
+          <div class="service-card fade-in-up">
+            <div class="service-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L12 3Z" />
+                <path d="M5 3v4" />
+                <path d="M9 3v4" />
+                <path d="M2 7h6" />
+              </svg>
+            </div>
+            <h3 class="service-title">Skin & Facials</h3>
+            <span class="service-price-badge">Starting from ₹599</span>
+            <p class="service-desc">Glow-enhancing treatments for healthy, radiant skin.</p>
+            <a href="#booking" class="btn-book">Book Appointment</a>
+            <a href="tel:9167022992" class="link-call">Call Now</a>
+          </div>
+
+          <!-- 3. Waxing & Grooming -->
+          <div class="service-card fade-in-up">
+            <div class="service-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z" />
+                <line x1="16" y1="8" x2="2" y2="22" />
+                <line x1="17.5" y1="15" x2="9" y2="15" />
+              </svg>
+            </div>
+            <h3 class="service-title">Waxing & Grooming</h3>
+            <span class="service-price-badge">Starting from ₹199</span>
+            <p class="service-desc">Smooth, hygienic and comfortable waxing services.</p>
+            <a href="#booking" class="btn-book">Book Appointment</a>
+            <a href="tel:9167022992" class="link-call">Call Now</a>
+          </div>
+
+          <!-- 4. Manicure & Pedicure -->
+          <div class="service-card fade-in-up">
+            <div class="service-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0" />
+                <path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v2" />
+                <path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8" />
+                <path
+                  d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15" />
+              </svg>
+            </div>
+            <h3 class="service-title">Manicure & Pedicure</h3>
+            <span class="service-price-badge">Starting from ₹799</span>
+            <p class="service-desc">Premium nail care & spa treatments for hands and feet.</p>
+            <a href="#booking" class="btn-book">Book Appointment</a>
+            <a href="tel:9167022992" class="link-call">Call Now</a>
+          </div>
+
+          <!-- 5. Hair Treatments -->
+          <div class="service-card fade-in-up">
+            <div class="service-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 2v7.31" />
+                <path d="M14 2v7.31" />
+                <path d="M8.5 2h7" />
+                <path d="M14 9.3a6.5 6.5 0 1 1-4 0" />
+                <path d="M5.52 16h12.96" />
+              </svg>
+            </div>
+            <h3 class="service-title">Hair Treatments</h3>
+            <span class="service-price-badge">Starting from ₹3000</span>
+            <p class="service-desc">Advanced Keratin, smoothening & repair solutions.</p>
+            <a href="#booking" class="btn-book">Book Appointment</a>
+            <a href="tel:9167022992" class="link-call">Call Now</a>
+          </div>
+
+          <!-- 6. Makeup & Bridal -->
+          <div class="service-card fade-in-up card-highlight">
+            <div class="service-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M12 20.94c1.61-.42 3-1.16 3-2.94a5 5 0 0 0-.69-2.57l-1-1.63a13 13 0 0 1-1.31-2.8Zm0 0c-1.61-.42-3-1.16-3-2.94a5 5 0 0 1 .69-2.57l1-1.63a13 13 0 0 0 1.31-2.8Z" />
+                <path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z" />
+              </svg>
+            </div>
+            <h3 class="service-title">Makeup & Bridal</h3>
+            <span class="service-price-badge">Starting from ₹1000</span>
+            <p class="service-desc">Party & bridal makeover services for your special day.</p>
+            <a href="#booking" class="btn-book">Book Appointment</a>
+            <a href="tel:9167022992" class="link-call">Call Now</a>
+          </div>
+        </div>
+
+        <!-- View Full Menu Button -->
+        <div class="cta-container fade-in-up">
+          <a href="/pricing.html" class="btn btn-primary btn-soft">View Full Pricing Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section id="offers" class="special-offers section">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <h2>Special Offers</h2>
+          <p>Exclusive deals for our lovely clients.</p>
+        </div>
+        <div class="offers-grid">
+          <!-- 1. Loyalty Reward -->
+          <div class="offer-card fade-in-up">
+            <div class="offer-badge">Loyalty</div>
+            <div class="offer-content">
+              <h3>10% OFF</h3>
+              <p class="offer-text">On your 5th Visit</p>
+              <div class="offer-terms">
+                <ul>
+                  <li>Valid after 4 completed visits.</li>
+                  <li>Min bill: ₹1000.</li>
+                  <li>Not valid with other offers.</li>
+                  <li>Valid for 6 months.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Birthday Special -->
+          <div class="offer-card fade-in-up">
+            <div class="offer-badge">Birthday</div>
+            <div class="offer-content">
+              <h3>Flat 15% OFF</h3>
+              <p class="offer-text">During your birthday week</p>
+              <div class="offer-terms">
+                <ul>
+                  <li>Valid 7 days +/- birthday.</li>
+                  <li>Valid ID proof required.</li>
+                  <li>Services above ₹800.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Festive Offers -->
+          <div class="offer-card fade-in-up">
+            <div class="offer-badge">Seasonal</div>
+            <div class="offer-content">
+              <h3>Festive Packages</h3>
+              <p class="offer-text">Seasonal beauty packages</p>
+              <div class="offer-terms">
+                <p>Offers available during major festivals. Follow us for updates.</p>
+                <div style="margin-top: 10px;">
+                  <a href="https://www.instagram.com/glorioussalon.miraroad/" target="_blank" rel="noopener noreferrer"
+                    style="color: var(--accent); border-bottom: 1px solid var(--accent);">@glorioussalon.miraroad</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking section">
+      <div class="container booking-container">
+        <div class="booking-form-wrapper glass-card fade-in-up">
+          <h2>Book Your Appointment</h2>
+          <p>Select your preferred date and time.</p>
+          <p class="walk-in-note" style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">Walk-ins
+            welcome, but calling before visit is recommended to avoid waiting.</p>
+          <form id="bookingForm" class="booking-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="booking-date">Date</label>
+                <input type="date" id="booking-date" name="date" required>
+              </div>
+              <div class="form-group">
+                <label for="booking-time">Time</label>
+                <select id="booking-time" name="time" required>
+                  <option value="">Select Time</option>
+                  <option value="10:00">10:00 AM</option>
+                  <option value="11:00">11:00 AM</option>
+                  <option value="12:00">12:00 PM</option>
+                  <option value="13:00">01:00 PM</option>
+                  <option value="14:00">02:00 PM</option>
+                  <option value="15:00">03:00 PM</option>
+                  <option value="16:00">04:00 PM</option>
+                  <option value="17:00">05:00 PM</option>
+                  <option value="18:00">06:00 PM</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="booking-service">Service</label>
+              <select id="booking-service" name="service" required>
+                <option value="">Select Service</option>
+                <option value="Hair Cut">Hair Cut (₹150+)</option>
+                <option value="Hair Spa">Hair Spa (₹500+)</option>
+                <option value="Hair Colour">Hair Colour (₹600+)</option>
+                <option value="Facial">Facial (₹500+)</option>
+                <option value="Waxing">Waxing</option>
+                <option value="Manicure/Pedicure">Manicure / Pedicure (₹799+)</option>
+                <option value="Hair Treatment">Keratin/Botox (₹3000+)</option>
+                <option value="Makeup">Makeup (₹700+)</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="booking-name">Name</label>
+                <input type="text" id="booking-name" name="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <label for="booking-phone">Phone</label>
+                <input type="tel" id="booking-phone" name="phone" placeholder="Your Phone Number" required>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">Confirm Booking</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+      <div class="container">
+        <div class="section-header fade-in-up">
+        <section class="gallery section">
+  <div class="container">
+    <h2>Our Gallery</h2>
+
+    <div class="gallery-grid">
+      
+      <div class="gallery-item">
+        <img src="/gallery1.jpeg" alt="Gallery 1">
+      </div>
+
+      <div class="gallery-item">
+        <img src="/gallery2.jpeg" alt="Gallery 2">
+      </div>
+
+      <div class="gallery-item">
+        <img src="/gallery3.png" alt="Gallery 3">
+      </div>
+
+      <div class="gallery-item">
+        <img src="/gallery4.png" alt="Gallery 4">
+      </div>
+
+      <div class="gallery-item">
+        <img src="/gallery5.png" alt="Gallery 5">
+      </div>
+
+      <div class="gallery-item">
+        <img src="/gallery6.png" alt="Gallery 6">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews section">
+      <div class="container">
+        <div class="reviews-section-header fade-in-up">
+          <div class="rating-summary">⭐ 4.9/5 Based on Google Reviews</div>
+          <h2>Client Reviews</h2>
+          <p>What our lovely clients say about us.</p>
+        </div>
+
+        <div class="reviews-container fade-in-up">
+          <button class="review-nav-btn prev-btn" aria-label="Previous Review">&#10094;</button>
+
+          <div class="reviews-wrapper">
+            <!-- Review 1 -->
+            <div class="review-slide active">
+              <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"Absolutely loved the service at Glorious! The staff is so professional and the
+                  ambiance is very relaxing. Highly recommend the hair spa."</p>
+                <h4 class="client-name">- Priya Sharma</h4>
+              </div>
+            </div>
+            <!-- Review 2 -->
+            <div class="review-slide">
+              <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"Best place in Mira Road for a haircut. They really understand what you want.
+                  Very
+                  hygienic and safe for ladies."</p>
+                <h4 class="client-name">- Anjali Desai</h4>
+              </div>
+            </div>
+            <!-- Review 3 -->
+            <div class="review-slide">
+              <div class="review-card">
+                <div class="stars">★★★★☆</div>
+                <p class="review-text">"Great facial services. My skin feels so fresh. The booking process was super
+                  easy
+                  too! A true premium experience."</p>
+                <h4 class="client-name">- Sneha Patel</h4>
+              </div>
+            </div>
+          </div>
+
+          <button class="review-nav-btn next-btn" aria-label="Next Review">&#10095;</button>
+        </div>
+
+        <!-- Give Review CTA -->
+        <div class="review-cta fade-in-up">
+          <h3>Our Reviews Matter To Us</h3>
+          <p>If you loved your experience, please share your feedback.</p>
+          <a href="https://g.page/r/CTPnb6_XcwgkEBM/review" target="_blank" class="btn btn-primary btn-soft">Give Us a
+            Review</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section id="founder" class="founder section">
+      <div class="container">
+    <section id="founder" class="owner-section">
+  <div class="container">
+    <p class="owner-label">Owned & Operated By</p>
+    <h3 class="owner-name">Neela Singh</h3>
+    <p class="owner-role">
+      Owner, Glorious Beauty Salon – Mira Road
+    </p>
+  </div>
+</section>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <div class="container contact-container">
+        <div class="contact-info glass-card fade-in-up">
+          <h2>Visit Us</h2>
+          <div class="info-item">
+            <h3>📍 Address</h3>
+            <p>Shop No 105A, Tower-2, JP North Imperia,<br>
+              Vinay Nagar Road, Near Madhusudan Global Pre School,<br>
+              Mira Road East, Maharashtra 401107</p>
+          </div>
+          <div class="info-item">
+            <h3>📞 Phone</h3>
+            <p><a href="tel:+919167022992" class="contact-link">91670 22992</a></p>
+          </div>
+          <div class="info-item">
+            <h3>⏰ Hours</h3>
+            <p>Mon - Sun: 10:00 AM - 08:00 PM</p>
+          </div>
+          <a href="https://wa.me/919167022992" target="_blank" class="btn btn-primary whatsapp-btn">Chat on WhatsApp</a>
+        </div>
+        <div class="map-wrapper glass-card fade-in-up">
+          <!-- Embedded Google Map using standard IFrame embed with search query -->
+          <iframe src="https://maps.google.com/maps?q=19.2796948,72.8833099&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            title="Glorious Beauty Salon Location">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <!-- Top CTA -->
+      <div class="footer-cta fade-in-up">
+        <h3>Ready for Your Next Salon Visit?</h3>
+        <a href="#booking" class="btn btn-primary">Book Appointment</a>
+      </div>
+
+      <div class="footer-grid">
+        <!-- Column 1: Brand -->
+        <div class="footer-col brand-col">
+          <div class="footer-logo">
+            <svg class="brand-logo footer-brand" width="220" height="70" viewBox="0 0 200 60"
+              xmlns="http://www.w3.org/2000/svg">
+              <use href="#logoGradient"></use> <!-- Reuse gradient from header -->
+              <text x="50%" y="38" text-anchor="middle" font-family="'Playfair Display', serif" font-weight="600"
+                font-style="italic" font-size="36" fill="url(#logoGradient)" letter-spacing="0.5px">Glorious</text>
+              <text x="50%" y="54" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="300"
+                font-size="8.5" fill="#e0e0e0" letter-spacing="3px" style="text-transform: uppercase;">Beauty
+                Salon</text>
+            </svg>
+          </div>
+          <p class="brand-desc">A women-owned sanctuary designed for your absolute comfort, hygiene, and privacy.</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col links-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="/pricing.html">Pricing</a></li>
+            <li><a href="#booking">Book Appointment</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact & Hours -->
+        <div class="footer-col contact-col">
+          <h4>Contact & Hours</h4>
+          <div class="contact-row">
+            <span class="icon">📍</span>
+            <p>Shop No 105A, Tower-2, JP North Imperia,<br>Vinay Nagar Road, Near Madhusudan Global Pre School,<br>Mira
+              Road East, Maharashtra 401107</p>
+          </div>
+          <div class="contact-row">
+            <span class="icon">📞</span>
+            <a href="tel:09167022992">091670 22992</a>
+          </div>
+
+          <div class="hours-box">
+            <h5>Working Hours</h5>
+            <p>Open Daily: 10:30 AM – 9:00 PM</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 Glorious Beauty Salon – Mira Road. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/glorioussalon.miraroad/" target="_blank"
+            rel="noopener noreferrer">Instagram</a>
+          <a href="#">Facebook</a>
+        </div>
+        <p class="credit">Women-Owned Business</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919167022992" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="white">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+    </svg>
+  </a>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
