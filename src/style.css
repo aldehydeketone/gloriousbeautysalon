@@ -1553,6 +1553,38 @@ p {
   }
 }
 
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1.2fr;
+  gap: 60px;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.footer-col {
+  text-align: left;
+}
+
+.brand-desc {
+  text-align: left;
+  line-height: 1.7;
+  max-width: 320px;
+}
+
+.contact-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  text-align: left;
+}
+
+.contact-row p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+
 /* Floating WhatsApp */
 /* Floating WhatsApp */
 .floating-whatsapp {
