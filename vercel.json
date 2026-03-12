@@ -1,4 +1,5 @@
-{
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist"
-}
+pricing.html contains:
+
+<script type="module" src="/src/main.js"></script>
+
+main.js contains:
