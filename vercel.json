@@ -1,5 +1,5 @@
-pricing.html contains:
-
-<script type="module" src="/src/main.js"></script>
-
-main.js contains:
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist"
+}
