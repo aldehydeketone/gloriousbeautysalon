@@ -110,7 +110,7 @@ body {
 
 *,
 *::before,
-*::after {
+*::after {     
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -579,7 +579,7 @@ p {
 }
 
 /* Hero Section */
-.hero {
+..hero {
   min-height: calc(100vh - var(--header-height));
   display: flex;
   align-items: center;
@@ -587,20 +587,13 @@ p {
   padding: 60px 0 40px;
   text-align: center;
   position: relative;
-  background: radial-gradient(circle at 70% 30%, rgba(244, 143, 177, 0.08), transparent 60%),
-    radial-gradient(circle at 20% 70%, rgba(211, 143, 244, 0.06), transparent 60%);
 }
 
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(circle at center, rgba(244, 143, 177, 0.05), transparent 70%);
-  pointer-events: none;
-}
+
+
+
+
+
 
 .hero-content {
   position: relative;
